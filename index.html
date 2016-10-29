@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>jQuery HTML</title>
+<title>MarkDown基本操作</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
@@ -291,80 +291,43 @@ img {
 </style>
 </head>
 <body>
-<h2>jq的捕获</h2>
-<h3>获得内容 - text()、html() 以及 val()</h3>
-<pre><code>text() - 设置或返回所选元素的文本内容
-html() - 设置或返回所选元素的内容（包括 HTML 标记）
-val() - 设置或返回表单字段的值
+<h1>一级标题</h1>
+<h2>二级</h2>
+<h3>三级</h3>
+<h4>四级</h4>
+<h5>五级</h5>
+<h6>六级</h6>
+<p>段落的前后要有空行，所谓的空行是指没有文字内容。    <br />
+若想在段内<strong>强制换行</strong>的方式是使用<em>两个以上空格</em>加上回车（引用中换行省略回车）。</p>
+<blockquote>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套</p>
+<blockquote>
+<p>再嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr />
+<p>代码块加四个空格     <br />
+注意:需要和普通段落之间存在空行。</p>
+<pre><code>xcxckxzncvmzxn
+dd
 </code></pre>
 
-<h3>获取属性 - attr()</h3>
-<h2>设置内容和属性</h2>
-<p>$(&quot;#btn1&quot;).click(function(){</p>
-<pre><code>$(&quot;#test1&quot;).text(&quot;Hello world!&quot;);
-</code></pre>
-
-<p>});</p>
-<p>$(&quot;#btn2&quot;).click(function(){</p>
-<pre><code>$(&quot;#test2&quot;).html(&quot;\&lt;b\&gt;Hello world!\&lt;/b\&gt;&quot;);
-</code></pre>
-
-<p>});</p>
-<p>$(&quot;#btn3&quot;).click(function(){</p>
-<pre><code>$(&quot;#test3&quot;).val(&quot;RUNOOB&quot;);    
-</code></pre>
-
-<p>});</p>
-<h2>jQuery attr() 方法也用于设置/改变属性值。</h2>
-<p>$(&quot;button&quot;).click(function(){</p>
-<pre><code>$(&quot;#runoob&quot;).attr({
-    &quot;href&quot; : &quot;http://www.runoob.com/jquery&quot;,
-    &quot;title&quot; : &quot;jQuery 教程&quot;
-});
-</code></pre>
-
-<p>})</p>
-<h2>添加新的 HTML 内容</h2>
-<pre><code>  append() - 在被选元素的结尾插入内容
-  prepend() - 在被选元素的开头插入内容
-  after() - 在被选元素之后插入内容
-  before() - 在被选元素之前插入内容
-</code></pre>
-
+<hr />
 <ul>
-<li>
-在下面的例子中，我们创建若干个新元素。这些元素可以通过 text/HTML、jQuery 或者 JavaScript/DOM 来创建。然后我们通过 append() 方法把这些新元素追加到文本中（对 prepend() 同样有效）：
-实例
-function appendText()
-{
-var txt1=&quot;\&lt;p&gt;文本。\&lt;/p&gt;&quot;;              // 使用 HTML 标签创建文本 <br />
-var txt2=$(&quot;\&lt;p&gt;\&lt;/p&gt;&quot;).text(&quot;文本。&quot;);  // 使用 jQuery 创建文本
-var txt3=document.createElement(&quot;p&quot;);
-txt3.innerHTML=&quot;文本。&quot;;               // 使用 DOM 创建文本 text with DOM
-$(&quot;body&quot;).append(txt1,txt2,txt3);        // 追加新元素
-}
-</li>
+<li>1.sdshdffdsf</li>
+<li>2.ddfdf</li>
+<li>3.dddd</li>
 </ul>
-<h2>删除元素/内容</h2>
-<p>如需删除元素和内容，一般可使用以下两个 jQuery 方法：</p>
-<pre><code>  remove() - 删除被选元素（及其子元素） 自己也被移除
-  empty() - 从被选元素中删除子元素  不删除自己
-  $(&quot;p&quot;).remove(&quot;.abc&quot;);    过滤删除  只删除类名为abc的p元素
-</code></pre>
-
-<h2>jQuery 操作 CSS</h2>
-<p>jQuery 拥有若干进行 CSS 操作的方法。我们将学习下面这些：</p>
-<pre><code>  addClass() - 向被选元素添加一个或多个类
-  removeClass() - 从被选元素删除一个或多个类
-  toggleClass() - 对被选元素进行添加/删除类的切换操作
-  css() - 设置或返回样式属性
-</code></pre>
-
-<h2>jQuery css() 方法</h2>
-<p>css() 方法设置或返回被选元素的一个或多个样式属性。</p>
-<p>$(&quot;p&quot;).css({&quot;background-color&quot;:&quot;yellow&quot;,&quot;font-size&quot;:&quot;200%&quot;}); </p>
-<h2>尺寸</h2>
-<p>http://www.runoob.com/jquery/jquery-dimensions.html</p>
+<hr />
+<p><code>哈哈哈  标记作用</code></p>
+<hr />
+<p>&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt; </p>
+<p><img src="http://t1.qpic.cn/mblogpic/765ac54fc0c07a848d00/460.jpg" alt="插入图片" /></p>
+<hr />
+<img src=".\1.jpg" width = "200" height = "200"/>
 
 </body>
 </html>
